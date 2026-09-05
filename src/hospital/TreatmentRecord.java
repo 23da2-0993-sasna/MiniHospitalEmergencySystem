@@ -17,4 +17,29 @@ public class TreatmentRecord {
         this.treatment = treatment;
         this.date = date;
     }
+
+    public int getPatientId() {
+        return patientId;
+    }
+
+    public String getDoctorName() {
+        return doctorName;
+    }
+
+    public String getTreatment() {
+        return treatment;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Patient ID: " + patientId
+                + " | Doctor: " + doctorName
+                + " | Treatment: " + treatment
+                + " | Date: " + date;
+    }
 }
